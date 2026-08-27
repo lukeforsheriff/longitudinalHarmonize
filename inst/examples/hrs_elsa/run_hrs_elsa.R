@@ -1,6 +1,6 @@
 # =============================================================================
 # run_hrs_elsa.R -- harmonize two UNRELATED aging cohorts (HRS + ELSA) on the
-# cohortHarmonize package. Demonstrates the package generalizing far beyond the
+# longitudinalHarmonize package. Demonstrates the package generalizing far beyond the
 # PEG/HBS Parkinson's work it was built for.
 #
 # The two synthetic files deliberately use DIFFERENT variable names AND different
@@ -11,11 +11,11 @@
 
 ## --- 0. Point at the example folder ---------------------------------------
 # While developing locally, use the source path:
-EX <- "/Users/lukemonnich/Downloads/BWH26/p3_HARMONIZATION/cohortHarmonize/inst/examples/hrs_elsa"
+EX <- "/Users/lukemonnich/Downloads/BWH26/p3_HARMONIZATION/longitudinalHarmonize/inst/examples/hrs_elsa"
 # After you commit/push these files and reinstall from GitHub, you can use instead:
-#   EX <- system.file("examples/hrs_elsa", package = "cohortHarmonize")
+#   EX <- system.file("examples/hrs_elsa", package = "longitudinalHarmonize")
 
-library(cohortHarmonize)                                  # the installed package
+library(longitudinalHarmonize)                                  # the installed package
 source(file.path(EX, "register_hrs_elsa_rules.R"))        # adds edu_years_to_cat
 ds  <- file.path(EX, "dataschema.csv")
 dqm <- file.path(EX, "dq_metadata.csv")

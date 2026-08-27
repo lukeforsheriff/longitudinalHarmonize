@@ -1,12 +1,12 @@
 # =============================================================================
 # register_peg_hbs_rules.R
-# The PEG + HBS study-specific recode rules, registered onto cohortHarmonize via
+# The PEG + HBS study-specific recode rules, registered onto longitudinalHarmonize via
 # register_recode(). This is the "bring your own rules" pattern: the package ships
 # generic rules; here we add the ~40 study-specific ones the PEG/HBS source maps
 # reference (checkbox roll-ups, scale thresholds, smoking logic, etc.).
 # Source this file after loading the package, before harmonize_source().
 # =============================================================================
-suppressPackageStartupMessages({library(cohortHarmonize); library(dplyr)})
+suppressPackageStartupMessages({library(longitudinalHarmonize); library(dplyr)})
 
 # ---- shared helpers ---------------------------------------------------------
 PEG_MISS <- c(-4, -6, -7, -8, -9)

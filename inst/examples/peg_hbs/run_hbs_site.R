@@ -4,7 +4,7 @@
 # then combines it with the image PEG sends back.
 # =============================================================================
 
-library(cohortHarmonize)
+library(longitudinalHarmonize)
 source("register_peg_hbs_rules.R")
 ds <- "dataschema.csv"
 

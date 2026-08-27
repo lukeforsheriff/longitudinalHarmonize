@@ -1,8 +1,8 @@
 ---
-title: "Getting started with cohortHarmonize"
+title: "Getting started with longitudinalHarmonize"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Getting started with cohortHarmonize}
+  %\VignetteIndexEntry{Getting started with longitudinalHarmonize}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -12,7 +12,7 @@ knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 ```
 
 ```{r}
-library(cohortHarmonize)
+library(longitudinalHarmonize)
 ```
 
 A brief end-to-end example on in-memory data.

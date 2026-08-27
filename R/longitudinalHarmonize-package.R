@@ -1,12 +1,12 @@
-#' cohortHarmonize: config-driven harmonization + QC for longitudinal cohorts
+#' longitudinalHarmonize: config-driven harmonization + QC for longitudinal cohorts
 #'
 #' A source-agnostic toolkit that turns raw cohort data (CSV, REDCap API,
 #' SAS/SPSS/Stata, or a database) into one harmonized dataset following a
 #' user-defined DataSchema, then grades the result with the Schmidt et al. (2021)
 #' data-quality framework. See the vignettes:
 #' \itemize{
-#'   \item \code{vignette("getting-started", package = "cohortHarmonize")}
-#'   \item \code{vignette("creating-a-dataschema", package = "cohortHarmonize")}
+#'   \item \code{vignette("getting-started", package = "longitudinalHarmonize")}
+#'   \item \code{vignette("creating-a-dataschema", package = "longitudinalHarmonize")}
 #' }
 #'
 #' The workflow is: describe each source in a \emph{source map} that points its

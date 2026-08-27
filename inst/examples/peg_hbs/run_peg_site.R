@@ -12,8 +12,8 @@ OUT     <- "peg_harmonized.rds"        # the ONE file you will send back
 
 ## --- 1. Install the package once, then load the shared "recipe" -------------
 # install.packages("remotes")
-# remotes::install_github("lukeforsheriff/cohortHarmonize")
-library(cohortHarmonize)
+# remotes::install_github("lukeforsheriff/longitudinalHarmonize")
+library(longitudinalHarmonize)
 source("register_peg_hbs_rules.R")     # shared recode rules  (contains NO data)
 ds <- "dataschema.csv"                  # shared harmonization target (NO data)
 

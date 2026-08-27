@@ -1,10 +1,10 @@
 # =============================================================================
-# run_peg_hbs.R -- harmonize the PEG + HBS example ON the cohortHarmonize package.
+# run_peg_hbs.R -- harmonize the PEG + HBS example ON the longitudinalHarmonize package.
 # Proves the generic package reproduces the PEG/HBS pipeline. Run line by line.
 # =============================================================================
 
 ## --- 0. EDIT these paths --------------------------------------------------
-PKG_DIR <- "/Users/lukemonnich/Downloads/BWH26/p3_HARMONIZATION/cohortHarmonize"
+PKG_DIR <- "/Users/lukemonnich/Downloads/BWH26/p3_HARMONIZATION/longitudinalHarmonize"
 EX_DIR  <- file.path(PKG_DIR, "inst", "examples", "peg_hbs")
 PEG_DIR <- "/Users/lukemonnich/Downloads/BWH26/p2_DATASCHEMA/PEG Materials/data"        # folder of PEG csvs
 HBS_CSV <- "/Users/lukemonnich/Downloads/BWH26/p3_HARMONIZATION/output/hbs_fixture_SYNTHETIC.csv"  # or a real export
@@ -19,7 +19,7 @@ stopifnot(dir.exists(PKG_DIR), dir.exists(PEG_DIR), file.exists(HBS_CSV))
 ## --- 1. Load the package + register the PEG/HBS rules ---------------------
 # During development you don't need to install -- load_all() sources the package:
 #   install.packages("devtools")   # once
-devtools::load_all(PKG_DIR)                 # OR: library(cohortHarmonize) after install
+devtools::load_all(PKG_DIR)                 # OR: library(longitudinalHarmonize) after install
 source(file.path(EX_DIR, "register_peg_hbs_rules.R"))   # adds the ~40 study rules
 
 ds  <- file.path(EX_DIR, "dataschema.csv")

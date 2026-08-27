@@ -9,7 +9,7 @@
 #' Scaffold the config files
 #'
 #' Write a starter template you then fill in. See
-#' `vignette("creating-a-dataschema", package = "cohortHarmonize")`.
+#' `vignette("creating-a-dataschema", package = "longitudinalHarmonize")`.
 #'
 #' @param path Output CSV path.
 #' @param overwrite Overwrite if it exists.

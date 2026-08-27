@@ -1,4 +1,4 @@
-# cohortHarmonize
+# longitudinalHarmonize
 
 This is a config-driven and source-agnostic **harmonization + data-quality assessment**
 for longitudinal cohort studies. The package translates raw data from file types
@@ -13,7 +13,7 @@ reasons can still be harmonized.
 
 ```r
 # install.packages("remotes")
-remotes::install_github("lukeforsheriff/cohortHarmonize")
+remotes::install_github("lukeforsheriff/longitudinalHarmonize")
 ```
 
 Core dependencies are light (`readr`, `dplyr`, `tidyr`, `purrr`, `stringr`,
@@ -46,7 +46,7 @@ see `vignette("creating-a-dataschema")`.
 ## Quick start
 
 ```r
-library(cohortHarmonize)
+library(longitudinalHarmonize)
 
 ds  <- "dataschema.csv"
 peg <- harmonize_source(source_csv("peg.csv"),  "peg_map.csv", ds, source_name = "PEG")

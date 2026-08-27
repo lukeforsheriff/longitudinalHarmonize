@@ -14,7 +14,7 @@ editor_options:
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>", eval = FALSE)
 ```
 
-`cohortHarmonize` is driven entirely by three small CSV config files.
+`longitudinalHarmonize` is driven entirely by three small CSV config files.
 This guide walks the user through writing them. Nothing about the engine
 itself changes between projects, instead the user has to alter only the
 config files.
@@ -22,7 +22,7 @@ config files.
 ## 0. Scaffold blank templates
 
 ```{r}
-library(cohortHarmonize)
+library(longitudinalHarmonize)
 new_dataschema("dataschema.csv")
 new_source_map("peg_map.csv")
 new_dq_metadata("dq_metadata.csv")
@@ -43,7 +43,7 @@ via:
 -   <https://www.integrate.io/blog/complete-guide-to-database-schema-design-guide/>
 
 | column | meaning |
-|------------------------------------|------------------------------------|
+|----|----|
 | `variable` | the harmonized variable name (e.g. `age`, `exp_coffee`) |
 | `domain` | a grouping used by `select_domain()` (e.g. `Demographics`) |
 | `type` | `integer` / `float` (documentation + QC) |
@@ -61,7 +61,7 @@ One source map per data source. Each row explains: *this target variable
 is built from these raw column(s) using this recode rule.*
 
 | column | meaning |
-|------------------------------------|------------------------------------|
+|----|----|
 | `target_variable` | must match a `variable` in the DataSchema |
 | `source_columns` | one or more raw columns, `;`-separated |
 | `recode` | a rule name from `list_recodes()` (or one the user `register_recode()`) |
@@ -108,7 +108,7 @@ One row per variable, describing what "valid" means so `dq_report()` can
 eventually grade the harmonized output.
 
 | column | meaning |
-|------------------------------------|------------------------------------|
+|----|----|
 | `variable`, `domain` | as in the DataSchema |
 | `data_type` | `integer` / `float` (integrity check) |
 | `admissible_values` | allowed codes, `;`-separated (consistency: inadmissible categories) |

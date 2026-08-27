@@ -13,7 +13,7 @@ Nothing patient-level ever crosses between sites — only the *recipe* (out) and
 
 ## What you SEND to the PEG site (a small "kit" — contains NO patient data)
 
-1. A one-line install for the package: `remotes::install_github("lukeforsheriff/cohortHarmonize")`
+1. A one-line install for the package: `remotes::install_github("lukeforsheriff/longitudinalHarmonize")`
 2. Four config files (plain CSV/R text, no data inside):
    - `dataschema.csv` — the shared target variables
    - `peg_source_map.csv` — how PEG's raw columns map to the schema
@@ -42,7 +42,7 @@ Nothing patient-level ever crosses between sites — only the *recipe* (out) and
 ## What YOU then do (in `run_hbs_site.R`)
 
 ```r
-library(cohortHarmonize)
+library(longitudinalHarmonize)
 # you already harmonized HBS locally -> hbs_harmonized.rds
 combined <- combine_harmonized(c("hbs_harmonized.rds", "peg_harmonized.rds"))
 View(combined)                         # <- this is how you SEE the combined data,

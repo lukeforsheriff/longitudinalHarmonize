@@ -1,4 +1,4 @@
 library(testthat)
-library(cohortHarmonize)
+library(longitudinalHarmonize)
 
-test_check("cohortHarmonize")
+test_check("longitudinalHarmonize")

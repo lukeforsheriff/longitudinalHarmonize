@@ -1,4 +1,4 @@
-Package: cohortHarmonize
+Package: longitudinalHarmonize
 Title: Config-Driven Harmonization and Quality Control for Longitudinal Cohort Data
 Version: 0.1.0
 Authors@R:
@@ -30,6 +30,6 @@ Suggests:
     rmarkdown
 Config/testthat/edition: 3
 VignetteBuilder: knitr
-URL: https://github.com/lukeforsheriff/cohortHarmonize
-BugReports: https://github.com/lukeforsheriff/cohortHarmonize/issues
+URL: https://github.com/lukeforsheriff/longitudinalHarmonize
+BugReports: https://github.com/lukeforsheriff/longitudinalHarmonize/issues
 Config/roxygen2/version: 8.1.0

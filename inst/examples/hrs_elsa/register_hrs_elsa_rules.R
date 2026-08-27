@@ -1,7 +1,7 @@
 # One study-specific recode rule this demo needs beyond the built-ins:
 # HRS records education as YEARS; the DataSchema wants a 3-level category.
 # (ELSA already provides a category, so it uses the built-in `map` rule instead.)
-suppressPackageStartupMessages(library(cohortHarmonize))
+suppressPackageStartupMessages(library(longitudinalHarmonize))
 
 register_recode("edu_years_to_cat", function(df, cols, param = NULL) {
   y <- suppressWarnings(as.numeric(df[[cols[1]]]))

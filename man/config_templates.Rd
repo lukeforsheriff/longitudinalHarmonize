@@ -23,5 +23,5 @@ new_dq_metadata(path = "dq_metadata.csv", overwrite = FALSE)
 }
 \description{
 Write a starter template you then fill in. See
-\code{vignette("creating-a-dataschema", package = "cohortHarmonize")}.
+\code{vignette("creating-a-dataschema", package = "longitudinalHarmonize")}.
 }

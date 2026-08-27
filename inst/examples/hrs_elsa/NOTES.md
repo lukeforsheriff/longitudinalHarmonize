@@ -1,6 +1,6 @@
 # HRS + ELSA example
 
-A second worked example (alongside `peg_hbs/`) showing `cohortHarmonize` on two
+A second worked example (alongside `peg_hbs/`) showing `longitudinalHarmonize` on two
 **unrelated aging cohorts** — the Health and Retirement Study (US) and the
 English Longitudinal Study of Ageing (UK) — to demonstrate the package generalizes
 well beyond the Parkinson's work it was built for.
