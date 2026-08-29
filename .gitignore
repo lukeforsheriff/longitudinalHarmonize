@@ -14,3 +14,7 @@ inst/doc/
 
 # macOS
 .DS_Store
+
+# data images / stray R session files (never publish participant-level data)
+*.rds
+.Rapp.history
